@@ -2,6 +2,15 @@
 
 class UploadFiles {
 
+    /**
+     * Upload multiple and single files in a php form
+     * @param array $resource
+     * A $_FILES['field'] array which can be multiple or single
+     * @param array $options
+     * An options array for specifying the mode of operation of this class
+     * @return array $return
+     */
+
     private $options = [
         'multiple' => true,
         'directory' => null,
